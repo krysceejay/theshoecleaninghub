@@ -5,6 +5,7 @@ import BottomTabs from './components/layouts/BottomTabs'
 import Home from './pages/home/Home'
 import Details from './pages/home/Details'
 import Login from './pages/auth/Login'
+import Register from './pages/auth/Register'
 import Onboarding from './pages/Onboarding'
 import NotFound from './pages/NotFound'
 
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="home/details/:number" element={<Details />} />
       </Route>
       <Route path="login" element={<Login />} />
+      <Route path="signup" element={<Register />} />
       <Route path="/" element={<Onboarding />} />
       <Route path="/*" element={<NotFound />} />
     </Routes>
