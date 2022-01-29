@@ -1,18 +1,33 @@
 @tailwind base;
 @tailwind components;
 
-@layer base {
+/* @layer base {
     @font-face {
         font-family: 'Gotham';
+        font-weight: 600;
+        color: red;
         src: url('./fonts/Gotham-Font/GothamBook.ttf') format('truetype'), 
         url('./fonts/Gotham-Font/GothamLight.ttf') format('truetype'),
         url('./fonts/Gotham-Font/GothamBold.ttf') format('truetype');
     }
-}
+} */
 
 body {
-  @apply font-gotham;
+  @apply font-montserrat text-cdark overflow-y-scroll;
+}
+
+/* Hide scrollbar for IE, Edge add Firefox */
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  display: none !important;
+  width: 0px !important;
 }
 
 @tailwind utilities;
+
 

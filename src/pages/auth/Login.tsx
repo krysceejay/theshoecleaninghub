@@ -1,5 +1,5 @@
 import React, {FC, useState} from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
 const Login: FC = () => {
   const navigate = useNavigate()
@@ -65,6 +65,12 @@ const Login: FC = () => {
                 </svg>
               </div>
             </div>
+            <Link to="/forgot-password" className="text-right block mt-1.5">Forgot password?</Link>
+          </div>
+          <div className="mb-6">
+            <button className="bg-cdark text-white font-bold py-3 rounded-lg border border-cdark text-center w-full mt-8">
+              Login
+            </button>
           </div>
         </form>
       </div>

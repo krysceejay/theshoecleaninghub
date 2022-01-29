@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'gotham': ['Gotham', 'Helvetica', 'Arial', 'sans-serif']
+        'montserrat': ['Montserrat', 'sans-serif']
       },
       fontSize: {
         "tiny": "0.6rem",
