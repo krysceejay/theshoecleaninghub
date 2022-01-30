@@ -14,6 +14,7 @@ module.exports = {
       colors: {
         "cdark": "#060606",
         "clight": "#757575",
+        "cgrey-1": "#DBDBDB",
       },
     },
   },
