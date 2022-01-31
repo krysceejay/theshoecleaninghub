@@ -8,13 +8,14 @@ module.exports = {
         'montserrat': ['Montserrat', 'sans-serif']
       },
       fontSize: {
-        "tiny": "0.6rem",
+        "tiny": "11px",
         "sml": "15px",
       },
       colors: {
         "cdark": "#060606",
         "clight": "#757575",
         "cgrey-1": "#DBDBDB",
+        "cmain": "#FDEB69",
       },
     },
   },

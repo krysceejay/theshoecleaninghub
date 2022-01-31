@@ -44,18 +44,23 @@ const Login: FC = () => {
 
   return (
     <div className="">
-      <div className="bg-yellow-300 px-4 py-10">
-        <div onClick={() => navigate(-1)} className="cursor-pointer">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-        </div>
-        <div className="w-14 h-14 mt-5">
-          <img src="/img/colored-logo.png" alt="Logo" className="w-full h-full object-cover" />
-        </div>
-        <div className="mt-4">
-          <h3 className="text-2xl leading-7 text-cdark">Welcome</h3>
-          <span className="text-sml text-cdark">Sign in to continue</span>
+      <div className="bg-cmain sticky top-0">
+        <div className="px-4 py-10 overflow-hidden relative">
+          <div onClick={() => navigate(-1)} className="cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </div>
+          <div className="w-14 h-14 mt-5">
+            <img src="/img/colored-logo.png" alt="Logo" className="w-full h-full object-cover" />
+          </div>
+          <div className="mt-4">
+            <h3 className="text-2xl leading-7 text-cdark font-bold">Welcome</h3>
+            <span className="text-sml text-cdark">Sign in to continue</span>
+          </div>
+          <div className="w-32 h-32 absolute -right-3 -bottom-6">
+            <img src="/img/bw-logo.png" alt="BWLogo" className="w-full h-full object-contain" />
+          </div>
         </div>
       </div>
       <div className="px-4 pt-4">

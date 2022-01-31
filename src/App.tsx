@@ -6,6 +6,7 @@ import Home from './pages/home/Home'
 import Details from './pages/home/Details'
 import Login from './pages/auth/Login'
 import Register from './pages/auth/Register'
+import ForgotPassword from './pages/auth/ForgotPassword'
 import Onboarding from './pages/Onboarding'
 import NotFound from './pages/NotFound'
 
@@ -20,6 +21,7 @@ const App = () => {
       </Route>
       <Route path="login" element={<Login />} />
       <Route path="signup" element={<Register />} />
+      <Route path="forgot-password" element={<ForgotPassword />} />
       <Route path="/" element={<Onboarding />} />
       <Route path="/*" element={<NotFound />} />
     </Routes>
