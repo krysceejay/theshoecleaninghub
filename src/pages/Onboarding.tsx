@@ -15,10 +15,10 @@ const Onboarding: FC = () => {
         <p className="text-sml text-center mt-3 text-clight">The Shoe Cleaning Hub is your convenient neighbourhood shoe cleaning service to clean, disinfect and refresh your footwear.</p>
       </div>
       <div className="flex items-center space-x-4 my-16">
-        <Link to="/login" className="flex-1 bg-white font-bold py-3 rounded-lg border border-cdark text-center">
+        <Link to="/login" className="flex-1 bg-white py-3 rounded-lg border border-cdark text-center">
           Login
         </Link>
-        <Link to="/signup" className="flex-1 bg-cdark text-white font-bold py-3 rounded-lg border border-cdark text-center">
+        <Link to="/signup" className="flex-1 bg-cdark text-white py-3 rounded-lg border border-cdark text-center">
           Sign Up
         </Link>
       </div>

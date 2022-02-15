@@ -25,11 +25,12 @@ const Register: FC = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    navigate("/verify-account")
     
   }
 
   return (
-    <div className="">
+    <div>
       <div className="bg-cmain sticky top-0">
         <div className="px-4 py-10 overflow-hidden relative">
           <div onClick={() => navigate(-1)} className="cursor-pointer">
@@ -41,8 +42,8 @@ const Register: FC = () => {
             <img src="/img/colored-logo.png" alt="Logo" className="w-full h-full object-cover" />
           </div>
           <div className="mt-4">
-            <h3 className="text-2xl leading-7 text-cdark font-bold">Create Account</h3>
-            <span className="text-sml text-cdark">Sign up for an account below</span>
+            <h3 className="text-2xl leading-7">Create Account</h3>
+            <span className="text-sml  mt-2">Sign up for an account below</span>
           </div>
           <div className="w-32 h-32 absolute -right-3 -bottom-6">
             <img src="/img/bw-logo.png" alt="BWLogo" className="w-full h-full object-contain" />
@@ -52,10 +53,10 @@ const Register: FC = () => {
       <div className="px-4 pt-4">
         <form onSubmit={handleSubmit}>
           <div className="mb-6">
-            <label className="block mb-2 text-xs text-cdark">
+            <label className="block mb-2 text-xs ">
             Full name
             </label>
-            <input className="border rounded-lg w-full h-12 px-4 text-cdark focus:outline-none" 
+            <input className="border rounded-lg w-full h-12 px-4  focus:outline-none" 
               required
               type="text"
               name="fullName"
@@ -64,10 +65,10 @@ const Register: FC = () => {
             />
           </div>
           <div className="mb-6">
-            <label className="block mb-2 text-xs text-cdark">
+            <label className="block mb-2 text-xs ">
             Email address
             </label>
-            <input className="border rounded-lg w-full h-12 px-4 text-cdark focus:outline-none" 
+            <input className="border rounded-lg w-full h-12 px-4  focus:outline-none" 
               required
               type="email"
               name="email"
@@ -76,10 +77,10 @@ const Register: FC = () => {
             />
           </div>
           <div className="mb-6">
-            <label className="block mb-2 text-xs text-cdark">
+            <label className="block mb-2 text-xs ">
             Phone number
             </label>
-            <input className="border rounded-lg w-full h-12 px-4 text-cdark focus:outline-none" 
+            <input className="border rounded-lg w-full h-12 px-4  focus:outline-none" 
               required
               type="text"
               name="phoneNumber"
@@ -88,7 +89,7 @@ const Register: FC = () => {
             />
           </div>
           <div className="mb-6">
-            <label className="block mb-2 text-xs text-cdark">
+            <label className="block mb-2 text-xs ">
             Password
             </label>
             <div className="flex items-center">
@@ -116,13 +117,13 @@ const Register: FC = () => {
             </div>
           </div>
           <span className="text-tiny text-clight block mx-auto text-center">By signing up, you agree to our  
-            <Link to="/login" className="text-cdark font-semibold"> Terms of Use </Link> and
-            <Link to="/login" className="text-cdark font-semibold"> Policy</Link>
+            <Link to="/login" className="text-cdark font-bold"> Terms of Use </Link> and
+            <Link to="/login" className="text-cdark font-bold"> Policy</Link>
           </span>
           <div>
             <button
             type="submit"
-            className={`${email && password ? "bg-cdark text-white" : "bg-cgrey-1 text-clight"} font-bold py-3 rounded-xl border-0 text-center w-full mt-2`}>
+            className={`${email && password ? "bg-cdark text-white" : "bg-cgrey-1 text-clight"} py-3 rounded-xl border-0 text-center w-full mt-2`}>
               Create Account
             </button>
           </div>

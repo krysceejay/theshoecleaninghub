@@ -1,5 +1,5 @@
 import React, {FC, useState} from 'react'
-import { useNavigate, Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const ForgotPassword: FC = () => {
   const navigate = useNavigate()
@@ -17,7 +17,7 @@ const ForgotPassword: FC = () => {
   }
 
   return (
-    <div className="">
+    <div>
       <div className="bg-cmain sticky top-0">
         <div className="px-4 py-10 overflow-hidden relative">
           <div onClick={() => navigate(-1)} className="cursor-pointer">
@@ -29,8 +29,8 @@ const ForgotPassword: FC = () => {
             <img src="/img/colored-logo.png" alt="Logo" className="w-full h-full object-cover" />
           </div>
           <div className="mt-4">
-            <h3 className="text-2xl leading-7 text-cdark font-bold">Password Reset</h3>
-            <span className="text-sml text-cdark">Get a new password</span>
+            <h3 className="text-2xl leading-7">Password Reset</h3>
+            <span className="text-sml mt-2">Get a new password</span>
           </div>
           <div className="w-32 h-32 absolute -right-3 -bottom-6">
             <img src="/img/bw-logo.png" alt="BWLogo" className="w-full h-full object-contain" />
@@ -40,10 +40,10 @@ const ForgotPassword: FC = () => {
       <div className="px-4 pt-4">
         <form onSubmit={handleSubmit}>
           <div className="mb-6">
-            <label className="block mb-2 text-xs text-cdark">
+            <label className="block mb-2 text-xs ">
             Email address
             </label>
-            <input className="border rounded-lg w-full h-12 px-4 text-cdark focus:outline-none" 
+            <input className="border rounded-lg w-full h-12 px-4  focus:outline-none" 
               required
               type="email"
               name="email"
@@ -54,7 +54,7 @@ const ForgotPassword: FC = () => {
           <div>
             <button
             type="submit"
-            className={`${email ? "bg-cdark text-white" : "bg-cgrey-1 text-clight"} font-bold py-3 rounded-xl border-0 text-center w-full mt-8`}>
+            className={`${email ? "bg-cdark text-white" : "bg-cgrey-1 text-clight"} py-3 rounded-xl border-0 text-center w-full mt-8`}>
               Send Reset Link
             </button>
           </div>

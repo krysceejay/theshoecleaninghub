@@ -20,12 +20,37 @@ body {
 body {
   -ms-overflow-style: none;
   scrollbar-width: none; /* Firefox */
+  -webkit-tap-highlight-color: transparent;
 }
 
 ::-webkit-scrollbar {
   -webkit-appearance: none;
   display: none !important;
   width: 0px !important;
+}
+
+.tab-c {
+  box-shadow: 0px -1px 4px rgba(189, 189, 189, 0.16);
+}
+
+.cat-total {
+  box-shadow: 0px -1px 4px rgba(189, 189, 189, 0.16);
+}
+
+.carousel-wrp {
+  @apply flex items-center overflow-x-auto space-x-2;
+}
+
+.carousel-wrp::-webkit-scrollbar {
+  @apply w-0;
+}
+
+.carousel-item {
+  @apply text-cgrey-2 text-xs rounded-3xl bg-cgrey-1 px-3.5 py-2 flex-none;
+}
+
+.carousel-item.active {
+  @apply bg-cdark text-white;
 }
 
 @tailwind utilities;
