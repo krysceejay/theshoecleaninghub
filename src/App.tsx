@@ -2,15 +2,22 @@
 import { Routes , Route } from 'react-router-dom'
 import PrivateRoute from './routes/PrivateRoute'
 import BottomTabs from './components/layouts/BottomTabs'
+
 import Home from './pages/home/Home'
-import Orders from './pages/orders/Orders'
-import Profile from './pages/profile/Profile'
 import Category from './pages/home/Category'
 import ReviewOrder from './pages/home/ReviewOrder'
+import SelectAddress from './pages/home/SelectAddress'
+import PickUp from './pages/home/PickUp'
+
+import Orders from './pages/orders/Orders'
+import OrderDetails from './pages/orders/OrderDetails'
+import Profile from './pages/profile/Profile'
+
 import Login from './pages/auth/Login'
 import Register from './pages/auth/Register'
 import ForgotPassword from './pages/auth/ForgotPassword'
 import VerifyAccount from './pages/auth/VerifyAccount'
+
 import Onboarding from './pages/Onboarding'
 import NotFound from './pages/NotFound'
 
@@ -25,6 +32,9 @@ const App = () => {
         </Route>
         <Route path="category/:catname" element={<Category />} />
         <Route path="review-orders" element={<ReviewOrder />} />
+        <Route path="select-address" element={<SelectAddress />} />
+        <Route path="pick-up" element={<PickUp />} />
+        <Route path="order/:orderNum" element={<OrderDetails />} />
       </Route>
       <Route path="login" element={<Login />} />
       <Route path="signup" element={<Register />} />

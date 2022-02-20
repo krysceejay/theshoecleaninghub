@@ -20,14 +20,14 @@ const ReviewOrder: FC = () => {
       {id: "5", num: "#123", unit: 1, price: 2000},
     ]
 
-    // const handleSubmit = async () => {
-    //     navigate("/home")
-    // }
+    const handleSubmit = async () => {
+      navigate("/select-address")
+    }
     
   return (
     <div className="pb-20">
       <section className="sticky top-0 bg-white">
-        <header className="flex items-center justify-center relative pt-10 pb-5 shadow-sm">
+        <header className="flex items-center justify-center relative py-5 shadow-sm">
           <div onClick={() => navigate(-1)} className="cursor-pointer absolute left-4">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -71,6 +71,7 @@ const ReviewOrder: FC = () => {
           <span className="text-lg font-bold text-dark-yellow">₦16,500</span>
         </div>
         <button
+          onClick={handleSubmit}
           type="button"
           className="bg-cdark text-white py-4 rounded-xl border-0 text-center w-full mt-7">
             Proceed
