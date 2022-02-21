@@ -1,7 +1,7 @@
 import {FC, useState} from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import Modal from '../../components/Modal'
+import OrderSuccessful from '../../components/modals/OrderSuccessful'
 
 const PickUp: FC = () => {
     const navigate = useNavigate()
@@ -9,14 +9,12 @@ const PickUp: FC = () => {
     const [formData, setFormData] = useState({
         address: '',
         email: '',
-        phoneNumber: '',
         password: '',
-        showPass: false,
         switchBtn: false,
         modalVisible: false
       })
     
-      const { address, email, phoneNumber, password, showPass, switchBtn, modalVisible } = formData
+      const { address, email, password, switchBtn, modalVisible } = formData
     
       const handleOnchange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const {name, value} = e.target
@@ -38,7 +36,7 @@ const PickUp: FC = () => {
     
   return (
     <div className="pb-20">
-        <Modal modalVisible={modalVisible} closeModal={closeModal} />
+        <OrderSuccessful modalVisible={modalVisible} closeModal={closeModal} />
       <section className="sticky top-0 bg-white">
         <header className="flex items-center justify-center relative py-5 shadow-sm">
           <div onClick={() => navigate(-1)} className="cursor-pointer absolute left-4">

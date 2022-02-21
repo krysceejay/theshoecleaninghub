@@ -1,4 +1,4 @@
-import React, {FC} from 'react'
+import {FC} from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 
 interface IOrders {

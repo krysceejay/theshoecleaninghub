@@ -11,7 +11,10 @@ import PickUp from './pages/home/PickUp'
 
 import Orders from './pages/orders/Orders'
 import OrderDetails from './pages/orders/OrderDetails'
+
 import Profile from './pages/profile/Profile'
+import EditProfile from './pages/profile/EditProfile'
+import RecurringPickups from './pages/profile/RecurringPickups'
 
 import Login from './pages/auth/Login'
 import Register from './pages/auth/Register'
@@ -35,6 +38,8 @@ const App = () => {
         <Route path="select-address" element={<SelectAddress />} />
         <Route path="pick-up" element={<PickUp />} />
         <Route path="order/:orderNum" element={<OrderDetails />} />
+        <Route path="profile/edit" element={<EditProfile />} />
+        <Route path="profile/recurring-pickups" element={<RecurringPickups />} />
       </Route>
       <Route path="login" element={<Login />} />
       <Route path="signup" element={<Register />} />
