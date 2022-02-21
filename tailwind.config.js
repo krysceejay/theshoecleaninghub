@@ -24,6 +24,8 @@ module.exports = {
         "active-order-border": "rgba(117, 117, 117, 0.4)",
         "no-order-bg": "rgba(219, 219, 219, 0.4)",
         "cat-item-bg": "rgba(6, 6, 6, 0.2)",
+        "modal-overlay": "rgba(105, 105, 105, 0.7)",
+        "edit-profile-overlay": "rgba(0, 0, 0, 0.4)"
       },
       spacing: {
         "wshoe": "105px",

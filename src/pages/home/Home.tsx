@@ -8,9 +8,9 @@ interface IOrders {
 
 const Home: FC = () => {
   const orders: IOrders[] = [
-    {id: "1", num: "#123"},
-    {id: "2", num: "#123"},
-    {id: "3", num: "#123"},
+    {id: "1", num: "1232"},
+    {id: "2", num: "1233"},
+    {id: "3", num: "1234"},
   ]
   return (
     <div className="px-4">
@@ -89,7 +89,7 @@ const Home: FC = () => {
       <section className="mt-8">
         <div className="flex items-center justify-between">
           <h3 className="text-sml leading-tight font-medium">Active Orders</h3>
-          <Link to="/user/orders" className="text-sm text-dark-yellow font-medium">View all</Link>
+          <Link to="/orders" className="text-sm text-dark-yellow font-medium">View all</Link>
         </div>
         {orders?.length === 0 ? 
         <>
@@ -101,13 +101,13 @@ const Home: FC = () => {
         : 
         <div className="grid grid-cols-1 gap-3 mt-4">
           {orders.map(ord => (
-            <div key={ord.id} className="px-5 py-4 border-06 border-active-order-border flex space-x-4 rounded-lg">
+            <Link to={`/order/${ord.num}`} key={ord.id} className="px-5 py-4 border-06 border-active-order-border flex space-x-4 rounded-lg">
               <img src="/img/list-icon.png" alt="List Icon" className="w-6 h-6" />
               <div>
-                <p className="leading-none text-sml">Order No: #23122</p>
+                <p className="leading-none text-sml">Order No: #{ord.num}</p>
                 <p className="text-xs text-dark-yellow mt-1">Order Confirmed</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>}
       </section>
