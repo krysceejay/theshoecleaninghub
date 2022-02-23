@@ -43,7 +43,7 @@ const Login: FC = () => {
   }
 
   return (
-    <div>
+    <div className="pt-6">
       <div className="bg-cmain sticky top-0">
         <div className="px-4 py-10 overflow-hidden relative">
           <div onClick={() => navigate(-1)} className="cursor-pointer">

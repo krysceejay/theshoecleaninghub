@@ -1,3 +1,5 @@
+import { SplashScreen } from '@capacitor/splash-screen'
+
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from "react-router-dom"
@@ -11,7 +13,8 @@ ReactDOM.render(
       <App />
     </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
+  () => { SplashScreen.hide() }
 );
 
 // If you want to start measuring performance in your app, pass a function

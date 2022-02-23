@@ -30,7 +30,7 @@ const Home: FC = () => {
           <span className="text-dark-yellow font-black text-lg block leading-none mt-1">HAPPY FEET...</span>
         </div>
         <div className="w-wshoe h-wshoe rounded-full bg-white flex justify-center items-center">
-          <img src="/img/white-shoe.png" alt="Propix" className="w-20 h-14 object-contain" />
+          <img src="/img/white-shoe.png" alt="Propix" className="w-20 h-14 object-contain rounded-full" />
         </div>
       </section>
       <section className="mt-8">

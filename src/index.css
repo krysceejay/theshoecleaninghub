@@ -12,6 +12,7 @@
     }
 } */
 
+
 body {
   @apply font-montserrat text-cdark overflow-y-scroll;
 }
